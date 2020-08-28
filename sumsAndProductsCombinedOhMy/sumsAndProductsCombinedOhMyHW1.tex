@@ -1,0 +1,70 @@
+\documentclass{ximera}
+
+\input{../preamble.tex}
+
+\title{Sums and products combined, oh my!  HW 1}
+\author{Bart Snapp \and Brad Findell}
+\begin{document}
+\begin{abstract}
+Here we continue to investigate a new way to combine numbers.
+\end{abstract}
+\maketitle
+
+\emph{Let's set off the following situation in a box.} 
+\begin{quote}
+Suppose you wrote the numbers $1,2,3,\dots,100$ on a chalkboard. You
+may take any two numbers, erase them, and then write the sum of their
+sum and their product as another number in the list.
+\end{quote}
+Last class, we began investigating this idea, and we generated a lot
+of questions.  
+
+\begin{problem}
+Suppose in the first turn you remove 6 and 2.  After erasing them, what number will you append to the list?  $\answer{6*2+6+2}$
+\end{problem}
+
+\begin{problem}
+Suppose in the first turn you remove 13 and 5.  After erasing them, what number will you append to the list?  $\answer{13*5+13+5}$
+\end{problem}
+
+\begin{problem}
+The game must end when you have $\answer{1}$ number left.  That means the game will end after $\answer{99}$ turns.
+\begin{feedback}[correct]
+Correct!  Each turn reduces the length of the list by 1.
+\end{feedback}
+\end{problem}
+
+\begin{problem}
+Perhaps you have noticed that this process defines a new ``operation'' on numbers.  Let's
+call the operation $\star$.  Given two numbers $a$ and $b$, $a\star b$
+is then ``the sum of their sum and their product.''  In other words, 
+\[
+a\star b = \answer{a*b+a+b}
+\]
+\end{problem}
+
+\begin{problem}
+Make the following computations:
+\begin{enumerate}
+\item $3\star 4= \answer{3*4+3+4}$
+\item $4\star 5= \answer{4*5+4+5}$
+\item $4\star 3= \answer{4*3+4+3}$
+\item $(3\star 4)\star 5 = \answer{19*5+5+19}$
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}
+Is $\star$ a commutative operation?  Explain.  
+\begin{freeResponse}
+\end{freeResponse}
+\end{problem}
+
+
+\begin{problem}
+Is $\star$ an associative operation?  Explain.  
+\begin{freeResponse}
+\end{freeResponse}
+\end{problem}
+
+\end{document}
