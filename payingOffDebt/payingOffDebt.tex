@@ -2,6 +2,7 @@
 %\documentclass{ximera}
 
 \input{../preamble.tex}
+\usepackage[strict]{changepage}
 
 \title{Paying off Debt}
 \author{Brad Findell \and Bart Snapp}
@@ -25,15 +26,17 @@ payments over $5$ years.  Interest is calculated at $7\%$,
 compounded annually. 
 
 Write down some questions about this context.  
-
-
+\begin{freeResponse}
+\end{freeResponse}
+\vspace{2in}
 \end{question}
 
 
-\begin{question}[1in]
+\begin{question}
 Without making any calculations, make a guess at what the annual payment should be.  
 \begin{freeResponse}
 \end{freeResponse}
+\vspace{0.5in}
 \end{question}
 
 \newpage
@@ -42,7 +45,9 @@ We will approach this problem numerically.  Use your guess for the annual paymen
 all answers to the nearest cent.
 %(Do this work on paper, offline.  In Ximera, enter just the last row of your table.)  
 
-\def\arraystretch{2}
+\begin{adjustwidth}{-1cm}{-1cm}
+
+\def\arraystretch{2.5}
 \begin{table}[h]
 \begin{tabular}{|c|p{2cm}|c|p{2cm}|c|}
 \hline
@@ -55,6 +60,7 @@ Year & Interest & Balance with Interest & Payment & Remaining Principal Balance 
 5    &          &                     &         &                             \\ \hline
 \end{tabular}
 \end{table}
+\end{adjustwidth}
 
 %\[
 %  \begin{array}{|c|c|c|c|c|}
@@ -77,14 +83,15 @@ Year & Interest & Balance with Interest & Payment & Remaining Principal Balance 
 
 \end{question}
 
-\begin{question}[0.5in]
+\begin{question}
 Based on your table, was your guess is too low, too high, or just
-right?
+right?  Explain how you know. 
 \begin{multipleChoice}
   \choice{Too low}
   \choice[correct]{Too high}
   \choice{Just right}
 \end{multipleChoice}
+\vspace{1in}
 
 \end{question}
 %

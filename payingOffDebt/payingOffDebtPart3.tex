@@ -3,7 +3,7 @@
 
 \input{../preamble.tex}
 
-\title{Paying off Debt, Part 2}
+\title{Paying off Debt, Part 3}
 \author{Brad Findell \and Bart Snapp}
 \begin{document}
 \begin{abstract}
@@ -30,19 +30,19 @@ principal at the end of years $1, 2, 3, \dots$.
 
 %\includegraphics[scale=1.2]{payingOffDebtTableGraphic2.pdf}
 
-\def\arraystretch{3}
-\begin{table}[h]
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-Year, $n$ & Accumulated Interest & Balance with Interest & Payment & Remaining Principal Balance, $P_n$ \\ \hline
-0    &   0     &       0            &   0    &  $P$                 \\ \hline
-1    &          &                     &         &                             \\ \hline
-2    &          &                     &         &                             \\ \hline
-3    &          &                     &         &                             \\ \hline
-\end{tabular}
-\end{table}
-
-\vfill
+%\def\arraystretch{3}
+%\begin{table}[h]
+%\begin{tabular}{|c|c|c|c|c|}
+%\hline
+%Year, $n$ & Accumulated Interest & Balance with Interest & Payment & Remaining Principal Balance, $P_n$ \\ \hline
+%0    &   0     &       0            &   0    &  $P$                 \\ \hline
+%1    &          &                     &         &                             \\ \hline
+%2    &          &                     &         &                             \\ \hline
+%3    &          &                     &         &                             \\ \hline
+%\end{tabular}
+%\end{table}
+%
+%\vfill
 \end{question}
 \newpage
 \begin{question}
@@ -56,7 +56,7 @@ As a step toward a closed formula for $P_n$, write out expressions for $P_1$, $P
 \newpage
 
 \begin{question}
-Some students notice that the equation above includes a geometric
+Some students notice that the formula above includes a geometric
 series.  Which of the following are examples of geometric series?
 \begin{multipleChoice}
   \choice{$1+2+3+4+5+6+7$}
@@ -76,18 +76,20 @@ Find a closed-form expression for the sum of the geometric series:
   \[
   1 + (1+r) + (1+r)^2 + (1+r)^3 + \dots + (1+r)^{n-2}+ (1+r)^{n-1}
   \]
-  \[
-  \answer{\frac{(1+r)^n-1}{r}}
-  \]
-\end{question}
+  Call the geometric series $S$, and note that if you multiply $S$ by $r$, the ``common ratio,'' you get another geometric series with many of the same terms.  Use these observations to find the sum of the series.   
 
-\begin{question}
-Call the geometric series $S$, and note that if you multiply $S$ by $r$, the ``common ratio,'' you get another geometric series with many of the same terms.  Use these observations to find the sum of the series.   
 \begin{freeResponse}
 \end{freeResponse}
+
 \vfill
+
+  \[
+  S = \answer{\frac{(1+r)^n-1}{r}}
+  \]
+  
 \end{question}
 
+\newpage
 
  \begin{question}
  Use the closed-form expression for the sum of the geometric series to solve your equation for $x$, the annual payment.   
@@ -95,7 +97,6 @@ Call the geometric series $S$, and note that if you multiply $S$ by $r$, the ``c
  \end{freeResponse}
  \vfill
  \end{question}
-\newpage 
 
 \begin{question}
 What about monthly payments?  In other words, suppose you borrow $\$P$ and agree to pay it back in equal monthly
@@ -105,6 +106,8 @@ Write a formula for the monthly payment.
 \end{freeResponse}
 \vfill
 \end{question}
+
+\newpage 
 
 Now let's use your formula!  
 
@@ -116,8 +119,6 @@ rate is $6\%$, compounded monthly, what is your monthly payment? $\answer{719.46
 \end{freeResponse}
 \vfill
 \end{question}
-
-\break
 
 \begin{question}
 For this $\$120,000$ mortgage, how much interest and how much principal
@@ -132,12 +133,14 @@ For the same mortgage, how much interest would you pay in total over the $30$ ye
 $\answer{139005.60}$
 \end{question}
 
-%\begin{question}
-%Finding an equal monthly payment for paying off a debt is a foundational problem in financial mathematics.  
-%How might this problem change for more complicated financial transactions?  Consider the perspectives of 
-%borrowers, lenders, bankers, investors, etc.  
-%\begin{freeResponse}
-%\end{freeResponse}
-%\end{question}
+\newpage
+
+\begin{question}
+Finding an equal monthly payment for paying off a debt is a foundational problem in financial mathematics.  
+How might this problem change for more complicated financial transactions?  Consider the perspectives of 
+borrowers, lenders, bankers, investors, etc.  
+\begin{freeResponse}
+\end{freeResponse}
+\end{question}
 
 \end{document}
