@@ -20,29 +20,60 @@ sum and their product to the list.
 Last class, we began investigating this idea, and we generated a lot of interesting questions.  
 In this activity, we address some of these questions.  
 
-
-
-First note that the process defines a new operation on numbers.  Let's call the operation $\star$.  Given two numbers $a$ and $b$,  $a\star b$ is then ``the sum of their sum and their product.''    
-
 \begin{problem}
-Is $\star$ a commutative operation?  Explain.  
-\begin{freeResponse}
-$a\star b = a+b+ab= b+a+ba = b\star a$.  
-\end{freeResponse}
-\vfill
+First note that the process defines a new operation on numbers.  Let's call the operation $\star$.  Given two numbers $a$ and $b$,  $a\star b$ is then ``the sum of their sum and their product.''    In other words, 
+\[
+a\star b = \answer{a+b+ab}
+\]
 \end{problem}
 
 \begin{problem}
-Is $\star$ an associative operation?  Explain.  
-\begin{freeResponse}
-$(a\star b)\star c = (a+b+ab)\star c = (a+b+ab)+c + (a+b+ab)c 
-= a + b + c + ab + ac + bc + abc = a+(b+c+bc) + a(b+c+bc) =
-a\star (b+c+bc) = a \star(b\star c)$.  
+Is $\star$ a commutative operation?  $\answer[format=string]{yes}$
 
-Note that because $\star$ is both associative 
-and commutative, the order that we choose numbers does not matter.  
+\begin{explanation}
+Yes, because $a\star b = \answer{a+b+ab}  = b\star a$.  
+
+\begin{question}
+To be more precise, we might write 
+\[
+a\star b = (a+b)+ab= (b+a)+ba = b\star a,
+\]
+which demonstrates that the commutativity of $\star$ follows from the commutativity of 
+$\answer[format=string]{addition}$ and $\answer[format=string]{multiplication}$. 
+\end{question}
+\end{explanation}
+\end{problem}
+
+
+\begin{problem}
+Is $\star$ an associative operation?  $\answer[format=string]{yes}$
+
+\begin{explanation}
+Yes, because 
+\[
+(a\star b)\star c =  \left(\answer{a+b+ab}\right)\star c = \answer{(a+b+ab)+c + (a+b+ab)c} 
+ = a\star \left(\answer{b+c+bc}\right) = a \star(b\star c). 
+ \]
+%= a + b + c + ab + ac + bc + abc = a+(b+c+bc) + a(b+c+bc) =
+\begin{question}
+Now that we have established that $\star$ is both associative 
+and commutative, the order that we choose numbers \wordChoice{\choice{does} \choice{does not}} matter.
+
+Furthermore, if we continue choosing numbers until only one remains, that last number will be 
+\[
+1\star 2\star 3\star \dots \star 100. 
+\]
+\end{question}
+\end{explanation}
+\end{problem}
+
+\begin{problem}
+Name an operation that is associative but not commutative.  
+\begin{freeResponse}
+\begin{hint}
+Possible answers: matrix multiplication, function composition.  
+\end{hint}
 \end{freeResponse}
-\vfill
 \end{problem}
 
 \newpage
@@ -50,40 +81,79 @@ Back to the situation, let's try some simpler problems.
 
 \begin{problem}
 Try starting with the numbers $1,2,3,\dots, k$ for several small values of $k$.  What do you notice?  
-\begin{freeResponse}
-Beginning with $k = 2$, the pattern is $5, 23, 119, 729, \dots$.  
-\end{freeResponse}
-\vfill
+
+%Beginning with $k = 2$, the pattern is $5, 23, 119, 729, \dots$.  
+\[
+\begin{array}{c|c}
+\text{Beginning List}& \text{Final Value} \\
+\hline
+1,  2 & \answer{5}  \\
+1,  2,  3 & \answer{23} \\  
+1,  2,  3 ,  4 & \answer{119} \\
+1,  2,  3 ,  4 ,  5 & \answer{729} 
+\end{array}
+\]
+
 \end{problem}
 
 \begin{problem}
-What if we start with just $1$s?  Try starting with $k$ $1$s, for several small values of $k$.  What do you notice?  
-\begin{freeResponse}
-Beginning with $k=2$, the pattern is $3, 7, 15, 31, \dots$.  
-\end{freeResponse}
-\vfill
+Suppose we change the context.  For example, what if we start with just $1$s?  Try starting with $k$ $1$s, for several small values of $k$.  What do you notice?  
+
+% Beginning with $k=2$, the pattern is $3, 7, 15, 31, \dots$.  
+
+\[
+\begin{array}{c|c}
+\text{Beginning List}& \text{Final Value} \\
+\hline
+1,  1 & \answer{3}  \\
+1,  1,  1 & \answer{7} \\  
+1,  1,  1 ,  1 & \answer{15} \\
+1,  1,  1 ,  1 ,  1 & \answer{31} 
+\end{array}
+\]
+
 \end{problem}
 
 \newpage 
 
 \begin{problem}
 Expand the expression $(x+a)(x+b)$.  What is the value of this expression when $x=1$?  What do you notice?
-\begin{freeResponse}
-$(x+a)(x+b) = x^2+ (a+b)x+ab$.  When $x=1$, we get $1+a+b+ab$, which is $1+(a\star b)$.  
-\end{freeResponse}
-\vfill
+
+\begin{prompt}
+\[
+(x+a)(x+b) = x^2+ \left(\answer{a+b}\right)x+\answer{ab}.  
+\]
+When $x=1$, we get $\answer{1+a+b+ab}$, which is $(a\star b)+\answer{1}$.  
+\end{prompt}
+
 \end{problem}
 
 \begin{problem}
-Expand the expression $(x+a)(x+b)(x+c)$.  
+Expand the expression $(x+a)(x+b)(x+c)$.  What is the value of this expression when $x=1$?  What do you notice?
+
 \begin{prompt}
-$(x+a)(x+b)(x+c) = x^3+ \left(\answer{a+b+c}\right)x^2+\left(\answer{ab+bc+ac}\right)x+\answer{abc}$.  
-\end{prompt}
+\[
+(x+a)(x+b)(x+c) = x^3+ \left(\answer{a+b+c}\right)x^2+\left(\answer{ab+bc+ac}\right)x+\answer{abc}.  
+\]
 
 When $x=1$, we get $\answer{1+a+b+c+ab+bc+ac+abc}$, which is $1+(a\star b\star c)$
+\end{prompt}
+\begin{problem}
+The \emph{roots} of the polynomial $(x+a)(x+b)(x+c)$ are the solutions to the equation $(x+a)(x+b)(x+c)=0$, which are 
+$x=\answer{-a}$, $x=\answer{-b}$, or $x=\answer{-c}$.  
 
-What is the value of this expression when $x=1$?  What do you notice?
-\vfill
+\begin{warning}
+For our purposes right now, these negative signs are unnecessary complications.  In a particular problem, when you know the degree of the polynomial and the degree of the term of interest, getting the correct sign is mere bookkeeping.  Worrying about the sign will interfere with a more important goal: talking \emph{generally} about various sums and products of roots.  So in the following discussion we will ignore signs and write all expressions without negative signs.  
+\end{warning}
+
+So in this cubic polynomial, the constant coefficient is $(abc)$, which is the $\answer[format=string]{product}$ of the roots.  
+
+And the coefficient of $x^2$ is $(a+b+c)$, which is the $\answer[format=string]{sum}$ of the roots.  
+
+\begin{problem}
+Correct!  And the coefficient of $x$ is $\answer{ab+bc+ac}$, which is called \emph{the sum of the roots taken two at a time}.  Note that your expression includes all possible products of two of the roots.  \textbf{Cool Stuff!!}
+\end{problem}
+\end{problem}
 \end{problem}
 
 \newpage 
@@ -91,7 +161,7 @@ What is the value of this expression when $x=1$?  What do you notice?
 \begin{problem}
 Can you construct algebraic expressions that will help you solve the previous problems?  
 \begin{freeResponse}
-Try $(x+1)(x+2)(x+3)\dots(x+k)$ and $(x+1)^k$, again when $x=1$.  
+%Try $(x+1)(x+2)(x+3)\dots(x+k)$ and $(x+1)^k$, again when $x=1$.  
 \end{freeResponse}
 \vfill
 \end{problem}
