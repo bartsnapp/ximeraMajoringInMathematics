@@ -100,8 +100,8 @@ Try starting with the numbers $1,2,3,\dots, k$ for several small values of $k$. 
 \hline
 1,  2 & \answer{5}  \\
 1,  2,  3 & \answer{23} \\  
-1,  2,  3 ,  4 & \answer{4!-1} \\
-1,  2,  3 ,  4 ,  5 & \answer{5!-1}
+1,  2,  3 ,  4 & \answer{5!-1} \\
+1,  2,  3 ,  4 ,  5 & \answer{6!-1}
 \end{array}
 \]
 \begin{problem}
@@ -110,9 +110,9 @@ Try to discern a pattern and make a conjecture about a general formula:
 \begin{array}{c|c}
 \text{Beginning List}& \text{Conjectured final Value} \\
 \hline
-1,  2,  3 ,  \dots, 10 & \answer{10!-1} \\
-1,  2,  3 ,  \dots, 100 & \answer{100!-1} \\
-1,  2,  3 ,  \dots, n & \answer{n!-1} 
+1,  2,  3 ,  \dots, 10 & \answer{11!-1} \\
+1,  2,  3 ,  \dots, 100 & \answer{101!-1} \\
+1,  2,  3 ,  \dots, n & \answer{(n+1)!-1} 
 \end{array}
 \]
 
@@ -123,7 +123,7 @@ Compare your computed values to known factorials.  The answer boxes can interpre
 \end{problem}
 
 \begin{problem}
-Suppose we change the context.  For example, what if we start with just $1$s?  Try starting with $k$ $1$s, for several small values of $k$.  What do you notice?  
+Suppose we change the context.  For example, what if we start with just $1$s?  Try starting with $k$ $1$s, for several small values of $k$.  Make a conjecture to generalize the pattern.    
 
 % Beginning with $k=2$, the pattern is $3, 7, 15, 31, \dots$.  
 
@@ -134,7 +134,9 @@ Suppose we change the context.  For example, what if we start with just $1$s?  T
 1,  1 & \answer{3}  \\
 1,  1,  1 & \answer{7} \\  
 1,  1,  1 ,  1 & \answer{15} \\
-1,  1,  1 ,  1 ,  1 & \answer{31} 
+1,  1,  1 ,  1 ,  1 & \answer{31} \\
+10 1s & \answer{2^{10}-1} \\
+n 1s & \answer{2^n-1} 
 \end{array}
 \]
 
