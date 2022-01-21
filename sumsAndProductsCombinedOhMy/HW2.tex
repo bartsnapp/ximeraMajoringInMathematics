@@ -3,7 +3,7 @@
 
 \input{../preamble.tex}
 
-\title{Sums and products combined, oh my!  Part 2}
+\title{Sums and products combined, HW 2}
 \author{Bart Snapp \and Brad Findell}
 \begin{document}
 \begin{abstract}
@@ -11,14 +11,19 @@ More homework about Sums and Products Combined.
 \end{abstract}
 \maketitle
 
-\emph{Let's set off the following question in a box.} 
+%\emph{Let's set off the following question in a box.} 
 
+\section*{The Context}
+\begin{quote}
 Suppose you wrote the numbers $1,2,3,\dots,100$ on a chalkboard. You
 may take any two numbers, erase them, and then add the sum of their
 sum and their product to the list.
+\end{quote}
 
-Last class, we began investigating this idea, and we generated a lot of interesting questions.  
-In this activity, we address some of these questions.  
+In the first class, we began investigating this context, and we generated a lot of interesting questions.  
+In the second class, we addressed some of these questions and made progress on answering some of them.  
+
+\section*{Homework Questions}
 
 \begin{problem}
 First note that the process defines a new operation on numbers.  Let's call the operation $\star$.  Given two numbers $a$ and $b$,  $a\star b$ is then ``the sum of their sum and their product.''    In other words, 
@@ -79,7 +84,7 @@ Thus, in the original situation, if we continue choosing numbers until only one 
 \end{problem}
 
 \begin{problem}
-Name an operation that is associative but not commutative.  
+Name an operation that is associative but \textbf{not commutative}.  
 \begin{freeResponse}
 \begin{hint}
 Possible answers: matrix multiplication, function composition.  
@@ -168,42 +173,51 @@ Expand the expression $(x+a)(x+b)(x+c)$.  What is the value of this expression w
 
 When $x=1$, we get $\answer{1+a+b+c+ab+bc+ac+abc}$, which is $(a\star b\star c)+\answer{1}$
 \end{prompt}
-\begin{problem}
-The \emph{roots} of the polynomial $(x+a)(x+b)(x+c)$ are the \emph{solutions} to the equation $(x+a)(x+b)(x+c)=0$, which are 
-$x=\answer{-a}$, $x=\answer{-b}$, or $x=\answer{-c}$.  
-
-\begin{warning}
-For our purposes right now, these negative signs are unnecessary complications.  In a particular problem, when you know the degree of the polynomial and the degree of the term of interest, getting the correct sign is mere bookkeeping.  Worrying about the sign will interfere with a more important goal: talking \emph{generally} about various sums and products of roots.  So in the following discussion we will ignore signs and write all expressions without negative signs.  
-\end{warning}
-
-\begin{problem}
-So in this cubic polynomial, the constant coefficient is $(abc)$, which is the $\answer[format=string]{product}$ of the roots.  
-
-And the coefficient of $x^2$ is $(a+b+c)$, which is the $\answer[format=string]{sum}$ of the roots.  
-
-\begin{problem}
-Correct!  And the coefficient of $x$ is $\answer{ab+bc+ac}$, which is called \textbf{the sum of the roots taken two at a time}.  Note that your expression includes all possible products of two of the roots.  \textbf{Cool Stuff!!}
-\end{problem}
-\end{problem}
-\end{problem}
-\end{problem}
-
-\newpage 
-
-\begin{problem}
-Can you construct algebraic expressions that will help you solve the previous problems?  
-\begin{freeResponse}
-%Try $(x+1)(x+2)(x+3)\dots(x+k)$ and $(x+1)^k$, again when $x=1$.  
-\end{freeResponse}
-\vfill
+With some care, these ideas can be formalized to prove your conjectured answers to previous problems.  
 \end{problem}
 
 \begin{problem}
-Summarize the results above, reminding us what the problem was and
-what the solution is. Explain your reasoning along the way.
-\begin{freeResponse}
-\end{freeResponse}
-\vfill
+Compare the related polynomial $(x-a)(x-b)(x-c)$.  (\emph{Note the sign changes.}) The \textbf{roots} of this polynomial are the \textbf{solutions} to the 
+equation 
+\[
+(x-a)(x-b)(x-c)=0
+\]
+, and those solutions are $x=\answer{a}$, $x=\answer{b}$, and $x=\answer{c}$.  
+
+\begin{problem}
+In this cubic polynomial, the coefficient of $x^2$ is $-(a+b+c)$, and we observe that its opposite, $(a+b+c)$, is the $\answer[format=string]{sum}$ of the roots.  
+
+Furthermore, the constant coefficient is $-(abc)$, and its opposite, $(abc)$, is the $\answer[format=string]{product}$ of the roots.  
+\begin{hint}
+Think of words like average, product, quotient, sum, difference. 
+\end{hint}
+
+\begin{problem}
+Correct!  And the coefficient of $x$ is $\answer{ab+bc+ac}$, which is called \textbf{the sum of the roots taken two at a time}.  Note that your expression includes all possible products of two of the roots.  
+
+With this new language, the sum of the roots taken one at a time is the same as the sum of the roots.  Furthermore, for a cubic polynomial, the sum of the roots taken three at a time is the same as the product of the roots.  This idea generalizes to polynomials of degree $n$, where the coefficient of $x^{n-k}$ is $(-1)^k$ times the sum of the roots taken $k$ at a time.  \textbf{Cool Stuff!!}
+
+And it gets cooler still:  The coefficients of such a polynomial in $x$ are each \textbf{symmetric polynomials} on the roots $a, b, c, \dots$, which is to say that they remain unchanged on any permutation of the roots.  This idea is foundational to \textbf{Galois Theory}, which you may study in a course on Abstract Algebra.  
 \end{problem}
+\end{problem}
+\end{problem}
+
+% Stuff about symmetric polynomials!!
+
+%\begin{problem}
+%Can you construct algebraic expressions that will help you solve the previous problems?  
+%\begin{freeResponse}
+%%Try $(x+1)(x+2)(x+3)\dots(x+k)$ and $(x+1)^k$, again when $x=1$.  
+%\end{freeResponse}
+%\vfill
+%\end{problem}
+
+%\begin{problem}
+%Summarize the results above, reminding us what the problem was and
+%what the solution is. Explain your reasoning along the way.
+%\begin{freeResponse}
+%\end{freeResponse}
+%\vfill
+%\end{problem}
 
 \end{document}
