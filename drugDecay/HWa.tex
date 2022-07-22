@@ -1,0 +1,55 @@
+\documentclass{ximera}
+
+\input{../preamble.tex}
+
+\title{Drug Decay}
+\author{Bart Snapp \and Brad Findell}
+\begin{document}
+\begin{abstract}
+Here we investigate various models for the decay of drugs in our bodies.  
+\end{abstract}
+\maketitle
+
+\begin{question}
+A solution to a numeric equation is a $\answer[format=string]{number}$ that makes the equation true.  A solution to a differential equation is a $\answer[format=string]{function}$ that makes the equation true.  
+\end{question}
+
+Pharmacokinetics is the study of the behavior of drugs and other substances administered to living organisms.  
+The well-established general model for 
+the elimination of a given drug from the body of a given human being is given by the differential equation 
+$$y'(t)=-\frac{ky(t)}{A+y(t)}$$
+where $y(0)$ is the initial concentration in, say, milligrams per liter, and $y(t)$ is the concentration at time $t$.  The constants $k$ and $A$ depend, of course, on the particular drug and the particular human being. 
+
+
+\begin{question}
+When the drug in question is alcohol, $y(t)$ is usually rather large in comparison to $A$.   With this assumption, we can approximate the general model with a simpler model, $y'(t)=\answer{-k}$.    
+
+The general solution to this differential equation is 
+\[  
+y(t) =\answer{ -kt + C}, 
+\]
+where $C=y(0)$ the initial concentration at time $t=0$.  
+
+What kind of function is this? $\answer[format=string]{linear}$
+\end{question}
+
+
+\begin{question}
+When the drug in question is cocaine, $y(t)$ is usually very small in comparison to $A$.   With this assumption, we can approximate the general model with a simpler model, $y'(t)=\answer{-\frac{k}{A}}y(t)$.    
+
+The general solution to this differential equation is 
+\[  
+y(t) =\answer{Ce^{-\frac{k}{A}t}}, 
+\]
+where $C=y(0)$ the initial concentration at time $t=0$.  
+
+What kind of function is this? $\answer[format=string]{exponential}$
+\end{question}
+
+%\begin{question}
+%Write down some additional questions about this context.       
+%\begin{freeResponse}
+%\end{freeResponse}
+%\end{question}
+
+\end{document}
