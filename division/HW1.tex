@@ -1,4 +1,4 @@
-\documentclass[handout]{ximera}
+\documentclass{ximera}
 
 \input{../preamble.tex}
 
@@ -18,20 +18,6 @@ Write down at least three ``real-world'' examples of the dvision problem $12\div
 \vfill
 \end{problem}
 
-The \emph{Common Core State Standards for Mathematics} describes fractions as follows: 
-
-\begin{quote}
-3.NF.1. Understand a fraction $1/b$ as the quantity formed by $1$ part when a
-whole is partitioned into $b$ equal parts; understand a fraction $a/b$ as
-the quantity formed by $a$ parts of size $1/b$.
-\end{quote}
-
-\begin{problem}
-Write down some questions about this context.  Indicate whether each question is Level 1, 2, or 3.  
-\begin{freeResponse}
-\end{freeResponse}
-\vfill
-\end{problem}
 
 
 \begin{problem}
@@ -44,10 +30,26 @@ When dividing by a fraction, why does it work to invert and multiply?
 \newpage 
 
 \begin{problem}
-When we add and subtract fractions, we use a common denominator.  For dividing fractions, would it be okay to convert to common denominators and then just divide the numerators?  Explain why or why not. 
-\begin{freeResponse}
-\end{freeResponse}
-\vfill
+When we add and subtract fractions, we use a common denominator.  For dividing fractions, would it be okay to convert to common denominators and then just divide the numerators?  
+$\answer[format=string]{Yes}$
+\begin{problem}
+To prove this in general, first write the quotient as a fraction in simplest form
+\begin{align*}
+\frac{a}{b}\div\frac{c}{d} &= \frac{\answer{ad}}{\answer{bc}} & \text{simplest form}
+\end{align*}
+
+\wordChoice{\choice{True}\choice{False}\choice{Unsure}}
+
+Now compute by this method:  
+\begin{align*} 
+\frac{a}{b}\div\frac{c}{d} &= \frac{\answer{ad}}{\answer{bd}}\div\frac{\answer{cb}}{\answer{db}} & \text{common denominator}  &  \answer{T} \\
+      & \stackrel{?}{=} {\answer{ad}}\div{\answer{bc}} & \text{divide the numerators} &  \answer{T} \\
+      & = \frac{\answer{ad}}{\answer{bc}} & \text{write as fraction} &  \answer{T} \\
+      & = \frac{a}{b}\times\frac{d}{c} & \text{stds mult. algorithm} & \answer{T} \\
+      & = \frac{a}{b}\div\frac{c}{d} & \text{std. div. algorithm} & \answer{T} 
+\end{align*}
+\end{problem}
+
 \end{problem}
 
 
