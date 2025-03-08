@@ -54,20 +54,20 @@ For the cylinder, one of the principal curvatures is zero, so its Gaussian curva
 
 For the sphere, the principal curvatures go in \wordChoice{\choice[correct]{the same direction}\choice{opposite directions}}, so its Gaussian curvature is positive.  Furthermore, on a sphere the curvature is the same everywhere.  
  
-For the hyperbolic paraboloid, the principal curvatures go in \wordChoice{\choice[correct]{the same direction}\choice{opposite directions}}, so its Gaussian curvature is 
+For the hyperbolic paraboloid, the principal curvatures go in \wordChoice{\choice{the same direction}\choice[correct]{opposite directions}}, so its Gaussian curvature is 
 negative.  
 
-Side note: The curvature of a hyperbolic paraboloid is most negative at the saddle point and less negative elsewhere, so it cannot serve as a model of a hyperbolic plane, which has $\answer[format=string]{constant}$ curvature.  
+Side note: The curvature of a hyperbolic paraboloid is most negative at the saddle point and less negative elsewhere, so it cannot serve as a model of a hyperbolic plane, which has \wordChoice{\choice[correct]{constant}\choice{varying}} curvature.  But because the saddle point is much like a Pringles potato chip, it helps to imagine that a hyperbolic plane is like a Pringles potato chip everywhere!  
 \end{problem}
 
 \begin{problem}
-With constant positive curvature, a sphere curves toward itself and eventually closes to complete a finite area.  A skull cap can represent a small portion of a sphere, just as a sheet of paper can represent a small portion of a (flat) Euclidean plane.  
+With constant positive curvature, a sphere curves toward itself and eventually closes to complete a \wordChoice{\choice[correct]{finite}\choice{infinite}} area.  A skull cap can represent a small portion of a sphere, just as a sheet of paper can represent a small portion of a (flat) Euclidean plane.  
 
 With constant negative curvature, a hyperbolic surface curves away from itself and extends infinitely.  Daina Taimi\c{n}a has created crochet models of portions of hyperbolic planes.  See some pictures \href{https://www.theiff.org/oexhibits/oe1e.html}{here}.  
 
 We explored a disc model of spherical geometry and a Poincaré disc model of hyperbolic geometry.  Representing curved surfaces on a flat computer screen requires some distortion.  Both models represent ``straight'' lines with curves, and both models represent angles accurately.  (Other models make different choices.)
 
-In both cases, we saw that when the disc was very large, the angles sums in triangles became closer to $\answer{180}$ degrees, which is to say the models were closer to $\answer[format=string]{Euclidean}$ geometry.  
+In both cases, we saw that as the disc got larger, the angles sums in triangles became closer to $\answer{180}$ degrees, which is to say the models were closer to $\answer[format=string]{Euclidean}$ geometry.  
 % And distortion was less?  
 \end{problem}
 
@@ -137,10 +137,13 @@ $\answer[format=string]{no}$
 \begin{problem}
 In hyperbolic geometry, there is \wordChoice{\choice{one}\choice{zero}\choice[correct]{more than one}} parallel through a point not on a line. 
 \begin{feedback}[correct]
-In fact, this is the defining distinction between hyperbolic and Euclidean geometry.  The figure below shows three different lines through $C$, all parallel to line $\overleftrightarrow{AB}$.  
+In fact, this is the defining distinction between hyperbolic and Euclidean geometry.  The figure below shows, in a disc model, three different lines through $C$, all parallel to line $\overleftrightarrow{AB}$.  
 \begin{center}
 \includegraphics{hyperbolicParallels.png}
 \end{center}
+Note: In a hyperbolic or Euclidean plane, distinct lines are said to be \emph{parallel} if they do not intersect.  
+
+{\color{red} Warning: Lines are sometimes defined as \emph{parallel} when they are the same distance apart.  For hyperbolic geometry, this is not a useful definition.}  
 \end{feedback}
 \end{problem}
 \end{problem}
@@ -221,6 +224,9 @@ $\answer{360}$ degrees.
 \wordChoice{\choice[correct]{less than}\choice{equal to}\choice{greater than}} 
 $\answer{360}$ degrees.
 \end{enumerate}
+\begin{problem}
+In all three geometries, if we draw one $\answer[format=string]{diagonal}$ of the quadrilateral, we divide it into two triangles.  Furthermore, the interior angles of the quadrilateral are made up of interior angles of the two triangles.  The angle sum of a quadrilateral is exactly the sum of the angles of the two triangles.  
+\end{problem}
 \end{problem}
 
 \begin{problem} % Betweenness
@@ -258,12 +264,24 @@ First, two distinct perpendiculars from a given point to a given line would crea
 \item In spherical geometry, such a triangle \wordChoice{\choice[correct]{can}\choice{cannot}} exist because \emph{every} triangle has an angle sum greater than $180^\circ$.  
 \end{itemize}
 
+\begin{center}
+\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.7]
+\clip(-3.,-0.1) rectangle (12.,2.1);
+\draw[line width=1.pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (11.213940785051445,1.5646044445518976) -- (11.21815649207423,1.3137815882398602) -- (11.468979348386268,1.3179972952626449) -- (11.464763641363483,1.5688201515746822) -- cycle; 
+\draw[line width=1.pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (11.461786817329786,0.7195226672674778) -- (11.211000291969182,0.7255223449076836) -- (11.205000614328977,0.4747358195470804) -- (11.45578713968958,0.46873614190687457) -- cycle; 
+\draw [line width=1.pt] (-1.564168514412414,1.1250554323725062) circle (13.036487266354374cm);
+\draw [line width=1.pt] (10.506146939582424,-161.7727998905248) circle (163.34443297510484cm);
+\draw [line width=1.pt] (10.290942751443046,106.83278616774713) circle (106.37042822301825cm);
+\end{tikzpicture}
+\end{center}
+
 \begin{problem}
-Second, consider any two distinct perpendiculars to a given line.  In two dimensions, distinct lines are \emph{parallel} when they don't intersect.
+Second, consider any two distinct perpendiculars to a given line.  
 \begin{itemize}
-\item In hyperbolic geometry, the two perpendiculars \wordChoice{\choice[correct]{will be}\choice{might be}\choice{cannot be}} parallel.    
-\item In Euclidean geometry, the two perpendiculars \wordChoice{\choice[correct]{will be}\choice{might be}\choice{cannot be}} parallel.  
-\item In spherical geometry, the two perpendiculars \wordChoice{\choice{will be}\choice{might be}\choice[correct]{cannot be}} parallel 
+\item In hyperbolic geometry, the two perpendiculars \wordChoice{\choice[correct]{must be}\choice{might be}\choice{cannot be}} parallel.    
+\item In Euclidean geometry, the two perpendiculars \wordChoice{\choice[correct]{must be}\choice{might be}\choice{cannot be}} parallel.  
+\item In spherical geometry, the two perpendiculars \wordChoice{\choice{must be}\choice{might be}\choice[correct]{cannot be}} parallel 
 \end{itemize}
 \begin{problem}
 Correct!  In $\answer[format=string]{spherical}$ geometry, parallel lines don't exist!   
@@ -314,7 +332,7 @@ On a sphere, moving away from the center of the circle, the surface curves \word
 
 On a hyperbolic plane, moving away from the center of the circle, the surface curves \wordChoice{\choice{toward}\choice[correct]{away from}} itself, which creates \wordChoice{\choice{less}\choice{the same}\choice[correct]{more}} circumference than on a Euclidean plane as well as \wordChoice{\choice{less}\choice{the same}\choice[correct]{more}} area than on a Euclidean plane.  
 \begin{feedback}[correct]
-Correct!  This is why crocheted models of the hyperbolic plane are so ``leafy'' with much extra area.  
+Correct!  This is why crocheted models of the hyperbolic plane are so ``leafy,'' with much extra area.  
 \end{feedback}
 
 \end{problem}
