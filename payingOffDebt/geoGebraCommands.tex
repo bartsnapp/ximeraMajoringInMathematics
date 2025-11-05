@@ -1,0 +1,48 @@
+\documentclass[handout,space,nooutcomes]{ximera}
+%\documentclass{ximera}
+
+\input{../preamble.tex}
+%\usepackage[strict]{changepage}
+
+\title{GeoGebra Commands}
+\author{Brad Findell}
+\begin{document}
+\begin{abstract}
+Summaries of GeoGebra Commands for Financial Math
+\end{abstract}
+\maketitle
+
+
+$Payment( <\text{Rate}>, <\text{Number of Periods}>, <Present Value>, <Future Value (optional)>, <Type (optional)> )$
+Calculates the payment for a loan based on constant payments and a constant interest rate.
+
+FutureValue( <Rate>, <Number of Periods>, <Payment>, <Present Value (optional)>, <Type (optional)> )
+Returns the future value of an investment based on periodic, constant payments and a constant interest rate.
+
+Periods( <Rate>, <Payment>, <Present Value>, <Future Value (optional)>, <Type (optional)> )
+Returns the number of periods for an annuity based on periodic, fixed payments and a fixed interest rate.
+
+PresentValue( <Rate>, <Number of Periods>, <Payment>, <Future Value (optional)>, <Type (optional)> )
+Returns the total amount of payments of an investment.
+
+Rate( <Number of Periods>, <Payment>, <Present Value>, <Future Value (optional)>, <Type (optional)>, <Guess (optional)> )
+Returns the interest rate per period of an annuity.
+
+\begin{itemize}
+\item <Future Value (optional)> A cash balance you want to attain after the last payment. If you do not enter a future value, it is assumed to be 0.
+\item <Guess (optional)> Your guess for what the rate will be.
+\item <Number of Periods> Total number of payments for the loan.
+\item <Payment> The amount paid in each period.
+\item <Present Value (optional)> Total amount that a series of future payments is worth now. If you do not enter a value, it is assumed to be 0.
+\item <Present Value> Total amount that a series of future payments is worth now.
+\item <Rate> Interest rate per period.
+\item <Type (optional)> Indicates when payments are due. If you do not enter a value or you enter 0 the payment is due at the end of the period. If you enter 1 it is due at the beginning of the period.
+\end{itemize}
+
+\begin{itemize}
+\item Note: Make sure that you are consistent about the units you use for <Rate> and <Number of Periods>. If you make monthly payments on a four-year loan at an annual interest rate of 12 percent, use 12\%/12 for rate and 4*12 for number of payments.
+
+\item Note: For all arguments, cash paid out is represented by negative numbers and cash received by positive numbers.
+\end{itemize}
+
+\end{document}

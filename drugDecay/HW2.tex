@@ -1,0 +1,95 @@
+\documentclass{ximera}
+
+\input{../preamble.tex}
+
+\title{Drug Decay, Part 2}
+\author{Bart Snapp \and Brad Findell}
+\begin{document}
+\begin{abstract}
+Here we investigate various models for the decay of drugs in our bodies.  
+\end{abstract}
+\maketitle
+
+
+Pharmacokinetics is the study of the behavior of drugs and other substances administered to living organisms.  
+The well-established general model for 
+the elimination of a given drug from the body of a given human being is given by the differential equation 
+$$y'(t)=-\frac{ky(t)}{A+y(t)}$$
+where $y(0)$ is the initial concentration in, say, milligrams per liter, and $y(t)$ is the concentration at time $t$.  The constants $k$ and $A$ depend, of course, on the particular drug and the particular human being. 
+
+
+\begin{question}
+When the drug in question is alcohol, $y(t)$ is usually rather large in comparison to $A$.   With this assumption, we can approximate the general model with a simpler model, $y'(t)=\answer{-k}$.    
+
+If $C=y(0)$, the initial concentration at time $t=0$, then the general solution to this differential equation is 
+\[  
+y(t) =\answer{ -kt + C}.  
+\]
+\end{question}
+
+% Analyze various Blood Alcohol Content (BAC) calculators
+%
+ 
+\begin{question}
+
+As you know, alcohol consumption can be dangerous.  Even if you don't drink, you probably have friends and neighbors who do, so some knowledge might be worthwhile.  
+
+People drinking alcohol often monitor their consumption by counting ``drinks,'' (i.e., servings).  Informally, one drink is a bottle of beer, a glass of wine, or a shot of hard liquor.  So that each serving has the same amount of alcohol, these informal descriptions are standardized as follows:  
+
+\begin{itemize}
+\item One $\answer{12}$ ounce can of beer at $\answer{5}$ percent alcohol. 
+\item One $\answer{5}$ ounce glass of wine at $\answer{12}$ percent alcohol. 
+\item One $\answer{1.5}$ ounce shot of hard liquor at $\answer{40}$ percent alcohol.  % 200 proof
+\end{itemize}
+
+Observe that all of these have $\answer{0.6}$ ounces of alcohol.  Craft beer often has higher alcohol content and sometimes comes in larger cans.  For example, a $16$ ounce India pale ale at $7.5\%$ actually contains $\answer{16\times 0.075}$ ounces of alcohol, which would be more like $\answer{16\times 0.075\div 0.6}$ drinks.  Mixed drinks are sometimes made with one shot of hard liquor, but check with the bartender.  
+
+\begin{question}
+
+Since 1979 in the U.S., standard wine and liquor bottles have been 750 milliliters.  A quart is one fourth of a gallon.  But these bottles are called \emph{fifths} because the standard size used to be one fifth of a gallon.  
+
+Note: Here are some useful conversions:  $1 \textrm{ quart} = 32 \textrm{ fl.\ oz.}$;  $1 \textrm{ gallon} \approx 3.785 \textrm{ liters}$.  
+
+Question: How close is the metric ``fifth'' to  a fifth of gallon? 
+ 
+Answer: One fifth of a gallon is $\answer{3.785\div 5}$ milliliters.  So the 750 milliliter bottle is $\answer[tolerance=0.5]{3.785\div 5 - 750}$ milliliters 
+\wordChoice{\choice[correct]{less}\choice{more}}.  
+
+Moreover, 750 milliliters = $\answer{750\div 3785 \times 32 \times 4}$ ounces, which would be $\answer[tolerance=0.055]{750\div 3785 \times 32 \times 4 \div 5}$ ``glasses'' of wine, or $\answer[tolerance=0.055]{750\div 3785 \times 32 \times 4 \div 1.5}$ shots of liquor.  (Answer to the closest tenth of a glass of wine or tenth of a shot.) 
+
+
+\end{question}
+\end{question}
+
+
+
+% Question about time of elimination, graphically 
+\begin{question}
+\end{question}
+
+
+Again, the general model for  the elimination of a given drug from the body of a given human being is given by the differential equation 
+$$y'(t)=-\frac{ky(t)}{A+y(t)}$$
+where $y(0)$ is the initial concentration in, say, milligrams per liter, and $y(t)$ is the concentration at time $t$. 
+
+\begin{question}
+When the drug in question is an over-the counter pill, such as ib
+
+, $y(t)$ is usually very small in comparison to $A$.   With this assumption, we can approximate the general model with a simpler model, $y'(t)=\answer{-\frac{k}{A}}y(t)$.    
+
+If $C=y(0)$, the initial concentration at time $t=0$, then the general solution to this differential equation is 
+\[  
+y(t) =\answer{Ce^{-\frac{k}{A}t}}. 
+\]
+
+\end{question}
+
+\begin{question}
+When we connect the dots, should the connection be linear, concave up, or concave down? 
+
+Should the 
+
+\end{question}
+
+
+\end{document}

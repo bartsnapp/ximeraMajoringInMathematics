@@ -1,0 +1,320 @@
+\documentclass[handout,space,nooutcomes]{ximera}
+%\documentclass{ximera}
+
+\input{../preamble.tex}
+%\usepackage[strict]{changepage}
+
+\title{Paying off Debt}
+\author{Brad Findell \and Bart Snapp}
+\begin{document}
+\begin{abstract}
+Here we investigate where your payments go when you pay off debt.
+\end{abstract}
+\maketitle
+
+When you take out a loan, the amount of the loan is called
+\textbf{principal}.  For most loans, interest is calculated monthly,
+based on an \textbf{annual interest rate}, and based on the remaining
+balance.  When you make a payment, your payment first offsets the
+accumulated interest and then is applied to principal, in order to
+calculate the \textbf{remaining principal balance}.  The loan is paid
+back in full when the remaining principal balance is reduced to zero.
+
+ 
+Although loans are typically paid monthly, we first explore annual payments to simplify and shorten the calculations.  
+
+We want to derive a formula for computing the (fixed) annual payment for such a loan. 
+
+
+
+
+%Questions:
+%What is a sequence? 
+%What is a series? 
+%What is a geometric sequence?
+%What is an arithmetic sequence?  
+%What is a geometric series? 
+%Derive payment formula. 
+%How to go monthly? 
+%
+% present value, future value, amortization, annuity, discount rate 
+% 
+
+\begin{question}
+In everyday language, the words sequence and series are often synonyms, but in mathematics we distinguish between the two as follows: 
+
+A \emph{sequence} is a(n) \wordChoice{\choice{set}\choice[correct]{ordered set}\choice{unordered set}} of mathematical objects, such as numbers, geometric figures, or functions.  
+The objects are called the \wordChoice{\choice{values}\choice{numbers}\choice[correct]{terms}\choice{inputs}} of the sequence.  
+
+A \emph{series} is a $\answer[format=string]{sum}$ of consecutive terms from a sequence.  
+
+\end{question}
+
+\begin{question}
+When discussing sequences or series, it helps to number the terms.  The position of a term is called its \emph{index} in the sequence.  Sequences most often begin with an index of 0 or 1, but any integer will suffice, and the choice often depends on what is most convenient or sensible in the context. 
+
+A sequence is a function whose domain is a subset of the integers.  In other words, the input values are the indices (or index values) that make sense in the context, and the output values are the terms of the sequences
+
+The \emph{length} of a sequence is the number of terms, and sequences can be finite or infinite.  
+
+
+
+\begin{question}
+A \textbf{sequence} is a function with a domain that is a subset of the $\answer[format=string]{integers}$.  
+
+An \textbf{arithmetic sequence} has a constant $\answer[format=string]{difference}$ between consecutive terms. 
+
+An \textbf{arithmetic sequence} is a(n) $\answer[format=string]{linear}$ function. 
+
+An \textbf{geometric sequence} has a constant $\answer[format=string]{ratio}$ between consecutive terms. 
+
+A \textbf{geometric sequence} is a(n) $\answer[format=string]{exponential}$ function. 
+
+\end{question}
+\end{question}
+
+
+
+\begin{problem}
+Consider a sequence that begins $9, 12$.    
+\begin{enumerate}
+\item Continue the sequence so that it is an \textbf{arithmetic sequence}:
+\[
+9, 12, \answer{15}, \answer{18}, \answer{21}, \answer{24}, \dots
+\]
+\item Assuming that $f(1)=9$, write a recursive formula for the sequence:
+\[
+f(n+1)=\answer{f(n)+3}\textrm{, for }n\ge\answer{1}.
+\]
+\item Assuming that $f(1)=9$, write an explicit formula for the sequence: 
+\[
+f(n)=\answer{3n+6}\textrm{, for }n\ge\answer{1}
+\]
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}
+Consider a sequence that begins $9, 12$.    
+\begin{enumerate}
+\item Continue the sequence so that it is an \textbf{geometric sequence}:
+\[
+9, 12, \answer{16}, \answer{9(4/3)^3}, \answer{9(4/3)^4}, \answer{9(4/3)^5}, \dots
+\]
+\item Assuming that $f(1)=9$, write a recursive formula for the sequence:
+\[
+f(n+1)=\answer{f(n)(4/3)}\textrm{, for }n\ge\answer{1}.
+\]
+\item Assuming that $f(1)=9$, write an explicit formula for the sequence: 
+\[
+f(n)=\answer{9(4/3)^{n-1}}\textrm{, for }n\ge\answer{1}
+\]
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}
+A series is the $\answer[format=string]{sum}$ of consecutive terms from a(n) $\answer[format=string]{sequence}$.  
+
+An arithmetic series is the $\answer[format=string]{sum}$ of consecutive terms from a(n) $\answer[format=string]{arithmetic sequence}$ (two words).  
+
+A geometric series is the $\answer[format=string]{sum}$ of consecutive terms from a(n) $\answer[format=string]{geometric sequence}$ (two words).  
+\end{problem}
+
+
+
+
+\begin{question}
+
+To find a closed expression for the sum of a geometric series:  Multiply the series by the common ratio to create a second geometric series with most of the same terms.  Then the difference between the series (i.e., subtract one from the other) should have only two terms.  
+
+\end{question}
+
+\begin{question}
+Some students notice that the equation above includes a geometric series.  Write the geometric series here.
+\begin{freeResponse}
+\end{freeResponse}
+\end{question}
+
+\begin{question}
+How do you know this is a series?  How do you know this is a geometric series?   
+\begin{freeResponse}
+\end{freeResponse}
+\end{question}
+
+\begin{question}
+Call the geometric series $S$, and note that if you multiply $S$ by $1.07$, the ``common ratio,'' you get another geometric series with many of the same terms.  Use these observations to find the sum of the series.   
+\begin{freeResponse}
+\end{freeResponse}
+\end{question}
+
+Different 
+
+%Discount rate, 
+%Rate of return
+%Time value of money
+%
+%Perpetuity: an annuity that has no end. 
+%
+%Compounding.  
+%
+%
+%
+%Real interest rate (nominal interest rate minus inflation rate) 
+%
+%The ideas behind these calculations form the foundation of much finance and economics. 
+%
+%Bonds 
+%Theoretically, stocks are valued based a projected income stream
+%(Sometimes probabilistically)
+%
+%Risk-free interest rate
+%Risk premium
+%
+%
+%Accrued interest
+%
+%The reverse operation—evaluating the present value of a future amount of money—is called a discounting
+%
+%How much will it be worth in 5 years?  (Calculate future value.) 
+%Need to assume an interest rate.  
+%Initial calculations assume a fixed interest rate. 
+%Simulations can allow variable interest rates, probability distribution 
+%
+%Day count convention
+%30/360
+
+% When payments always on the same day of the month and always on time, a 30/360 convention yields the same interest rate every month, despite the fact that months vary from 28 to 31 days.  But when transaction happen on different days, especially across months and leap days, there are different ways to count the days--and thus different conventions.   
+
+%Compound interest, interest that increases exponentially over subsequent periods,
+%Simple interest, additive interest that does not increase
+%Effective interest rate, the effective equivalent compared to multiple compound interest periods
+%Nominal annual interest, the simple annual interest rate of multiple interest periods
+%Discount rate, an inverse interest rate when performing calculations in reverse
+%Continuously compounded interest, the mathematical limit of an interest rate with a period of zero time.
+%Real interest rate, which accounts for inflation.
+
+% accrued interest
+
+Here’s a set of concise descriptions for each concept:
+\subsection{Definitions}
+
+\begin{itemize}
+\item \emph{Simple Interest}: Interest calculated only on the original principal amount, not on accumulated interest.
+\item \emph{Compound Interest}: Interest calculated on both the original principal and previously earned interest.
+\item \emph{Present Value (PV)}: The current worth of a future sum of money, discounted by an interest rate.
+\item \emph{Future Value (FV)}: The amount a sum of money will grow to after earning interest over time.
+\item \emph{Effective Interest Rate (EIR)}: The actual annual rate earned or paid, accounting for compounding within the year.
+\item \emph{Nominal Interest Rate}: The stated annual interest rate, not adjusted for compounding or inflation.
+\item \emph{Real Interest Rate}: The interest rate adjusted for inflation, showing the true increase in purchasing power.
+\end{itemize}
+
+
+---
+
+\subsection{Formulas}
+\begin{itemize}
+\item Simple Interest (SI):
+ \[
+  SI = P \cdot r \cdot t
+ \]
+  where (P) = principal, (r) = annual interest rate (decimal), (t) = time in years.
+
+\item Compound Interest (CI):
+ \[
+  A = P \left(1 + \frac{r}{n}\right)^{nt}
+ \]
+  where ($A$) = future value, ($P$) = principal, ($r$) = annual interest rate, ($n$) = number of compounding periods per year, ($t$) = time in years.
+  Compound interest itself is (CI = A - P).
+
+\item Present Value (PV):
+ \[
+  PV = \frac{FV}{\left(1 + \frac{r}{n}\right)^{nt}}
+ \]
+
+\item Future Value (FV):
+ \[
+  FV = PV \cdot \left(1 + \frac{r}{n}\right)^{nt}
+ \]
+
+\item Effective Annual Rate (EAR or EIR):
+ \[
+  EAR = \left(1 + \frac{r}{n}\right)^n - 1
+ \]
+
+\item Nominal Interest Rate:
+  Simply the stated annual percentage rate (APR), e.g., 6\% per year, without compounding.
+
+\item Real Interest Rate:
+ \[
+  1 + r_{\text{real}} = \frac{1 + r_{\text{nominal}}}{1 + \pi}
+ \]
+  where $(\pi)$ = inflation rate. Approximation: $(r_{\text{real}} \approx r_{\text{nominal}} - \pi)$.
+
+\end{itemize}
+---
+
+\subsection{Example Problems}
+
+1. Simple Interest
+You invest $\$1{,}000$ at $5\%$ simple interest for $3$ years.
+\[
+SI = 1000 \cdot 0.05 \cdot 3 = 150
+\]
+So, interest = $\$150$, total = $\$1{,}150$.
+
+---
+
+2. Compound Interest
+You deposit $\$1{,}000$ at $5\%$ annual interest compounded quarterly for $3$ years.
+\[
+A = 1000 \left(1 + \frac{0.05}{4}\right)^{4 \cdot 3} = 1000 (1.0125)^{12} \approx 1161.62
+\]
+Compound interest = $\$161.62$.
+
+---
+
+3. Present Value
+You want $\$2{,}000$ in $5$ years. Interest rate = $6\%$ annually, compounded yearly.
+\[
+PV = \frac{2000}{(1.06)^5} \approx \frac{2000}{1.3382} \approx 1495.95
+\]
+You need to invest about $\$1{,}496$ today.
+
+---
+
+4. Future Value
+If you invest $\$500$ today at $8\%$ annual interest compounded monthly for $2$ years:
+\[
+FV = 500 \left(1 + \frac{0.08}{12}\right)^{24} \approx 500 (1.1699) \approx 584.95
+\]
+
+---
+
+5. Effective Interest Rate
+A loan has a nominal annual interest rate of $12\%$ compounded monthly.
+\[
+EIR = \left(1 + \frac{0.12}{12}\right)^{12} - 1 \approx (1.01)^{12} - 1 \approx 0.1268
+\]
+So $EIR \approx 12.68\%$.
+
+---
+
+6. Real Interest Rate
+If a bond yields $8\%$ nominally and inflation is $3\%$:
+\[
+r_{\text{real}} = \frac{1.08}{1.03} - 1 \approx 0.0485 = 4.85%
+\]
+So the real return $\approx 4.85\%$.
+
+---
+
+\begin{problem}
+Use the GeoGebra spreadsheet below to find (to the closest hundredth of a percent) the interest rate of a loan that requires 5 payments of $1{,}650$ to pay off a loan of $6{,}000$.  
+\begin{center}
+\geogebra{g4atuesr}{740}{300}
+\end{center}
+This loan carries an interest rate of $\answer{11.65}$ percent.  
+\end{problem}
+
+\end{document}
