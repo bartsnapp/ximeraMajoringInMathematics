@@ -45,7 +45,7 @@ You may have noticed that the site uses the following standardized ``drink'' des
 \item One $\answer{1.5}$ ounce shot of hard liquor at $\answer{40}$ percent alcohol.  
 \end{itemize}
 
-Observe that all of these have $\answer{0.6}$ ounces of alcohol.  Craft beer often has higher alcohol content and sometimes comes in larger cans.  For example, a $16$ ounce India pale ale at $7.5\%$ actually contains $\answer{16\times 0.075}$ ounces of alcohol, which would be more like $\answer{16\times 0.075\div 0.6}$ drinks.  Mixed drinks are sometimes made with one shot of hard liquor, but check with the bartender.  
+Observe that all of these have $\answer{0.6}$ ounces of alcohol.  Craft beer often has higher alcohol content and sometimes comes in larger cans.  For example, a $16$ ounce India pale ale at $7.5\%$ actually contains $\answer{16\times 0.075}$ ounces of alcohol, which would be more like $\answer[tolerance=0.1]{16\times 0.075\div 0.6}$ drinks.  Mixed drinks are sometimes made with one shot of hard liquor, but check with the bartender.  
 
 Note: In the United States, the alcohol content of hard liquor is often labeled as ``proof,'' which is defined as twice the percentage of alcohol by volume.  Much hard liquor is labeled 80 proof, which means that it is $\answer{40}$ percent alcohol.  
 
@@ -67,13 +67,6 @@ Moreover, 750 milliliters = $\answer{750\div 3785 \times 32 \times 4}$ ounces, w
 \end{question}
 \end{question}
 
-
-
-% Question about time of elimination, graphically 
-\begin{question}
-\end{question}
-
-
 Again, the general model for  the elimination of a given drug from the body of a given human being is given by the differential equation 
 $$y'(t)=-\frac{ky(t)}{A+y(t)}$$
 where $y(0)$ is the initial concentration in, say, milligrams per liter, and $y(t)$ is the concentration at time $t$. 
@@ -92,11 +85,11 @@ y(t) =\answer{Ce^{-\frac{k}{A}t}}.
 \begin{question}
 When the pill is taken daily, which of the following graphs could reasonably represent how the amount of drug varies before, after, and between doses over the first several days?  (Select all.)
 \begin{selectAll}
-\choice{\includegraphics{graphA.png}}
-\choice{\includegraphics{graphB.png}}
-\choice{\includegraphics{graphC.png}}
-\choice[correct]{\includegraphics{graphD.png}}
-\choice[correct]{\includegraphics{graphE.png}}
+\choice{A \includegraphics{graphA.png}}
+\choice{B \includegraphics{graphB.png}}
+\choice{C \includegraphics{graphC.png}}
+\choice[correct]{D \includegraphics{graphD.png}}
+\choice[correct]{E \includegraphics{graphE.png}}
 %\choice{\includegraphics{graphF.png}}
 %\choice{\includegraphics{graphG.png}}
 \end{selectAll}
@@ -112,13 +105,13 @@ Correct!  Talking points:
 \item Graph $\answer[format=string]{D}$ shows that the amount of drug jumps \emph{discontinuously} from the before- to after-dose amounts, which might make sense if the new dose is absorbed \emph{immediately} into the system.  
 \end{itemize}
 
-
+\begin{question}
 Let's assume that the pill is quickly (but not immediately) absorbed into the system.  
 Which of the following graphs best shows how the amount of drug behaves between doses?  
 \begin{multipleChoice}
-\choice{\includegraphics{graphE.png}}
-\choice[correct]{\includegraphics{graphF.png}}
-\choice{\includegraphics{graphG.png}}
+\choice{E \includegraphics{graphE.png}}
+\choice[correct]{F \includegraphics{graphF.png}}
+\choice{G \includegraphics{graphG.png}}
 \end{multipleChoice}
 
 \begin{question}
@@ -127,6 +120,7 @@ Correct!  Pharmeceuticals are well modeled as exponential $\answer[format=string
 $\answer[format=string]{up}$ between doses.  
 
 \end{question} 
+\end{question}
 \end{question}
 \end{question}
 
