@@ -27,36 +27,42 @@ y(t) =\answer{ -kt + C}.
 \]
 \end{question}
 
-% Analyze various Blood Alcohol Content (BAC) calculators
-%
- 
-\begin{question}
 
+\begin{question}
 As you know, alcohol consumption can be dangerous.  Even if you don't drink, you probably have friends and neighbors who do, so some knowledge might be worthwhile.  
 
-People drinking alcohol often monitor their consumption by counting ``drinks,'' (i.e., servings).  Informally, one drink is a bottle of beer, a glass of wine, or a shot of hard liquor.  So that each serving has the same amount of alcohol, these informal descriptions are standardized as follows:  
+People drinking alcohol often monitor their consumption by counting ``drinks,'' (i.e., servings).  Informally, one drink is a bottle of beer, a glass of wine, or a shot of hard liquor.  Explore the Blood Alcohol Content (BAC) calculator \href{https://www.calculator.net/bac-calculator.html}{here}. (Right-click or shift-click on the link for a pop-up menu that allows you to open the link in a new tab.) 
+
+After 4 beers, how many long would a 150-pound male need to wait before his blood alcohol content is below the legal limit for driving?  $\answer{4}$.  
+
+From the graph produced, what kind of function do you think the calculator uses to model blood alcohol content over time?  $\answer[format=string]{linear}$.  
+
+You may have noticed that the site uses the following standardized ``drink'' descriptions:  
 
 \begin{itemize}
 \item One $\answer{12}$ ounce can of beer at $\answer{5}$ percent alcohol. 
 \item One $\answer{5}$ ounce glass of wine at $\answer{12}$ percent alcohol. 
-\item One $\answer{1.5}$ ounce shot of hard liquor at $\answer{40}$ percent alcohol.  % 200 proof
+\item One $\answer{1.5}$ ounce shot of hard liquor at $\answer{40}$ percent alcohol.  
 \end{itemize}
 
 Observe that all of these have $\answer{0.6}$ ounces of alcohol.  Craft beer often has higher alcohol content and sometimes comes in larger cans.  For example, a $16$ ounce India pale ale at $7.5\%$ actually contains $\answer{16\times 0.075}$ ounces of alcohol, which would be more like $\answer{16\times 0.075\div 0.6}$ drinks.  Mixed drinks are sometimes made with one shot of hard liquor, but check with the bartender.  
+
+Note: In the United States, the alcohol content of hard liquor is often labeled as ``proof,'' which is defined as twice the percentage of alcohol by volume.  Much hard liquor is labeled 80 proof, which means that it is $\answer{40}$ percent alcohol.  
+
+Bacardi 151 was so named because it was $151$ proof, which means that it was $\answer{75.5}$ percent alcohol.  The product was discontinued in 2016 because of safety concerns.  
 
 \begin{question}
 
 Since 1979 in the U.S., standard wine and liquor bottles have been 750 milliliters.  A quart is one fourth of a gallon.  But these bottles are called \emph{fifths} because the standard size used to be one fifth of a gallon.  
 
-Note: Here are some useful conversions:  $1 \textrm{ quart} = 32 \textrm{ fl.\ oz.}$;  $1 \textrm{ gallon} \approx 3.785 \textrm{ liters}$.  
-
 Question: How close is the metric ``fifth'' to  a fifth of gallon? 
+
+Note: Here are some useful conversions:  $1 \textrm{ quart} = 32 \textrm{ fl.\ oz.}$;  $1 \textrm{ gallon} \approx 3.785 \textrm{ liters}$.  
  
-Answer: One fifth of a gallon is $\answer{3.785\div 5}$ milliliters.  So the 750 milliliter bottle is $\answer[tolerance=0.5]{3.785\div 5 - 750}$ milliliters 
+Answer: One fifth of a gallon is $\answer{3785\div 5}$ milliliters.  So the 750 milliliter bottle is $\answer[tolerance=0.5]{3785\div 5 - 750}$ milliliters 
 \wordChoice{\choice[correct]{less}\choice{more}}.  
 
 Moreover, 750 milliliters = $\answer{750\div 3785 \times 32 \times 4}$ ounces, which would be $\answer[tolerance=0.055]{750\div 3785 \times 32 \times 4 \div 5}$ ``glasses'' of wine, or $\answer[tolerance=0.055]{750\div 3785 \times 32 \times 4 \div 1.5}$ shots of liquor.  (Answer to the closest tenth of a glass of wine or tenth of a shot.) 
-
 
 \end{question}
 \end{question}
@@ -73,9 +79,7 @@ $$y'(t)=-\frac{ky(t)}{A+y(t)}$$
 where $y(0)$ is the initial concentration in, say, milligrams per liter, and $y(t)$ is the concentration at time $t$. 
 
 \begin{question}
-When the drug in question is an over-the counter pill, such as ib
-
-, $y(t)$ is usually very small in comparison to $A$.   With this assumption, we can approximate the general model with a simpler model, $y'(t)=\answer{-\frac{k}{A}}y(t)$.    
+When the drug in question is an over-the counter pill, similar to ibuprofen, $y(t)$ is usually very small in comparison to $A$.   With this assumption, we can approximate the general model with a simpler model, $y'(t)=\answer{-\frac{k}{A}}y(t)$.    
 
 If $C=y(0)$, the initial concentration at time $t=0$, then the general solution to this differential equation is 
 \[  
@@ -84,12 +88,48 @@ y(t) =\answer{Ce^{-\frac{k}{A}t}}.
 
 \end{question}
 
+
 \begin{question}
-When we connect the dots, should the connection be linear, concave up, or concave down? 
+When the pill is taken daily, which of the following graphs could reasonably represent how the amount of drug varies before, after, and between doses over the first several days?  (Select all.)
+\begin{selectAll}
+\choice{\includegraphics{graphA.png}}
+\choice{\includegraphics{graphB.png}}
+\choice{\includegraphics{graphC.png}}
+\choice[correct]{\includegraphics{graphD.png}}
+\choice[correct]{\includegraphics{graphE.png}}
+%\choice{\includegraphics{graphF.png}}
+%\choice{\includegraphics{graphG.png}}
+\end{selectAll}
 
-Should the 
+\begin{question}
+Correct!  Talking points: 
 
+\begin{itemize}
+\item Graph $\answer[format=string]{B}$ shows that the amount of drug increases between doses, but the amount actually decreases between doses and then jumps quickly after the next dose.  
+\item Graph $\answer[format=string]{A}$ shows the discrete data but does not attempt to show what happens between doses.  
+\item Graph $\answer[format=string]{C}$ connects the before- and after-dose amounts continuously yielding two functions, neither of which represent the amount of drug in the system.  Nonetheless, the graphs of both functions together can serve as an ``envelope'' enclosing possibilities for the correct graph. 
+\item Graph $\answer[format=string]{E}$ shows that the amount of drug jumps \emph{continuously} from the before- to after-dose amounts, but we must assume that the near-vertical lines are not actually vertical, but instead have a very large positive slope.  This would make sense if the drug is absorbed in, say, 10-20 minutes.  
+\item Graph $\answer[format=string]{D}$ shows that the amount of drug jumps \emph{discontinuously} from the before- to after-dose amounts, which might make sense if the new dose is absorbed \emph{immediately} into the system.  
+\end{itemize}
+
+
+Let's assume that the pill is quickly (but not immediately) absorbed into the system.  
+Which of the following graphs best shows how the amount of drug behaves between doses?  
+\begin{multipleChoice}
+\choice{\includegraphics{graphE.png}}
+\choice[correct]{\includegraphics{graphF.png}}
+\choice{\includegraphics{graphG.png}}
+\end{multipleChoice}
+
+\begin{question}
+
+Correct!  Pharmeceuticals are well modeled as exponential $\answer[format=string]{decay}$. Thus, the graph must be concave 
+$\answer[format=string]{up}$ between doses.  
+
+\end{question} 
 \end{question}
+\end{question}
+
 
 
 \end{document}
