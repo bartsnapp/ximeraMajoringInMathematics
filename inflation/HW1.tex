@@ -1,0 +1,282 @@
+\documentclass{ximera}
+
+\input{../preamble.tex}
+
+\title{Inflation Ideas}
+\author{Brad Findell}
+\begin{document}
+\begin{abstract}
+Here we explore the concept of inflation using recent data from the U.S.
+\end{abstract}
+\maketitle
+
+The aim of this homework is to experience tools to explain the concept of inflation and what it tells us about changing prices in the U.S. economy. 
+
+\begin{question}
+If the price of a gaming console goes from $\$500$ to $\$512$ in one month, we might say the rate of change is $\answer{12}$ dollars per month.  But a $\$12$ price increase would outrageous for a $\$15$ take-out-meal and insignificant for a $\$30,000$ new car. Thus, price changes are more sensibly conceived, calculated, and reported as \textbf{percent increases or decreases}.  
+
+\begin{itemize}
+\item The price increase for the gaming console would be $\answer{2.4}$ percent.  
+\item A comparable price increase for the take-out-meal would be $\answer{0.36}$ dollars. 
+\item A comparable price increase for the new car would be $\answer{720}$ dollars. 
+\end{itemize}
+\begin{hint}
+We are looking for price \textbf{increase}, not the new price.  Comparable price increases would be the same percentage of the original price.  
+\end{hint}
+\end{question}
+
+\begin{question}
+To begin our discussion of inflation data reported by the federal government, here is some helpful background: 
+\begin{itemize}
+\item The U.S. Bureau of Labor Statistics (BLS) tracks the prices of many goods and services in the U.S. economy.  The data is compiled monthly to compute the Consumer Price Index (CPI), which is a weighted average of a representative ``market basket'' of goods and services purchased by typical U.S. households.  
+% The BLS tracks prices of tens-of-thousands of items in about 200 categories, arranged into eight major groups (e.g., apparel, transportation). 
+\item The BLS releases different versions of the CPI for different regions of the country and different population groups, but the most commonly reported measure is the CPI for All Urban Consumers (CPI-U) which covers over 90 percent of the total population.  
+\end{itemize}
+
+Consider the following graph:
+\begin{center}
+\includegraphics[scale=0.35]{CPI2019-26.png}
+\end{center}
+Source:  \href{https://fred.stlouisfed.org/series/CPIAUCSL}{https://fred.stlouisfed.org/series/CPIAUCSL}.  
+
+At any given second, a gas station changes its price, a hardware store updates a price tag, or an online retailer tweaks an algorithm. Although individual prices change \wordChoice{\choice{randomly}\choice[correct]{discretely} \choice{continuously}}, the weighted average of millions of price changes essentially irons out these individual jumps. Thus, for the economy as a whole, it helps to imagine that the aggregated price level behaves like a smooth, continuous curve.  
+
+To help viewers imagine a continuous ``aggregated price function'', the discrete (monthly) data points are (usually) connected with a continuous graph.  What do you notice about the graph?  
+
+\begin{enumerate}
+\item From February-May $\answer{2020}$ and from May-June $\answer{2026}$, prices went down, which implies inflation was \wordChoice{\choice{positive}\choice{zero}\choice[correct]{negative}}.
+\item From June-August $\answer{2022}$ and from April-July $\answer{2024}$, prices were essentially flat, which implies inflation was \wordChoice{\choice{positive}\choice[correct]{close to zero}\choice{negative}}.
+\item In October $\answer{2026}$ the graph is disconnected because of a \wordChoice{\choice{data breach}\choice[correct]{government shutdown}\choice{BLS error}\choice{presidential veto}}. 
+\item Otherwise, prices went up, which implies that inflation was \wordChoice{\choice[correct]{positive}\choice{zero}\choice{negative}}.
+\end{enumerate}
+
+As we will see below, inflation was quite high from mid-2021 to mid-2022.  But during the run-up to the November 2024 presidential election, a majority of the general public believed which of the following: 
+\begin{multipleChoice}
+\choice{Inflation had stopped.}
+\choice{Inflation had receded.}
+\choice[correct]{Inflation was still high.}
+\end{multipleChoice}
+
+\begin{question}
+Correct!  But the public consensus was wrong about inflation!  
+
+The public was correct that prices were still high.  But inflation is not about the price level; inflation is about \textbf{changes} in prices.  
+
+Most of the public wanted priced to go down, which would require that inflation be negative.  Negative inflation is often called \wordChoice{\choice{negation}\choice{stagflation}\choice[correct]{deflation}\choice{disinflation}}.
+
+Looking at the graph, compare inflation the following periods:  June-2021 to June-2022 vs. March 2024 - September 2024. What about the graph in those two time periods might help us notice that inflation in 2024 had in fact receded from the 2022 highs?  
+\begin{multipleChoice}
+\choice{The height of the curve.}
+\choice[correct]{The slope of the curve.}
+\choice{The concavity of the curve.}
+\end{multipleChoice}
+\end{question}
+\begin{feedback}[correct]
+Correct!  The slope is clearly less steep in 2024 than in early 2022. 
+\end{feedback}
+\end{question}
+
+\begin{question}
+From May to June, 2022, the CPI increased from 291.298 to 294.957.  
+\begin{enumerate}
+\item What was the month-over-month inflation rate to the nearest hundredth of a percent?   $\answer[tolerance=0.04]{1.26}$ percent.  
+
+Inflation can be calculated over any number of months, but to compare inflation over different periods of time, it helps to compare annualized rates, just as loans and certificates of deposit are usually described with an ``annual percentage rate'' (APR). 
+
+\item If this monthly rate continued for 12 months, what would be the annual inflation rate to the nearest tenth of a percent?  $\answer[tolerance=0.06]{16.2}$ percent. 
+
+This is a very high rate of inflation.  
+
+\item In the following month, July, 2022, the CPI was 294.913, which indicates a very small month-to-month \textbf{decrease} in prices, and a month-over-month rate of inflation near $\answer{0}$ percent.  These large differences between consecutive months demonstrate that month-over-month measures can be ``noisy'' and misleading.  The common first approach for overcoming potentially  noisy data is to look at inflation over a full \wordChoice{\choice{month}\choice[correct]{year}\choice{decade}}, as illustrated in the next problem.   
+\end{enumerate}
+
+
+\begin{question}
+By imagining a smooth and continuous price function, we are also able to imagine that it has an ``instantaneous rate of change,'' which is to say it has a \wordChoice{\choice{product}\choice{quotient}\choice[correct]{derivative}\choice{integral}}.  
+
+\begin{question}
+But because CPI data is collected only \wordChoice{\choice{annually}\choice{quarterly}\choice[correct]{monthly}\choice{daily}}, we cannot directly measure this rate of change directly.  Most often, inflation is reported as ``percent change from a year ago,'' as shown in the following graph:  
+
+\begin{center}
+\includegraphics[scale=0.35]{CPIChange2019-26.png}
+\end{center}
+
+Based on this graph, how did inflation in mid-2024 compare to inflation in 2022?  
+\begin{multipleChoice}
+\choice{a lot higher}
+\choice{a little higher}
+\choice{about the same}
+\choice{a little lower}
+\choice[correct]{a lot lower}
+\end{multipleChoice}
+
+\begin{question}
+Correct! 
+
+Before the COVID-19 pandemic, year-over-year inflation was near the Fed target of $\answer{2}$ percent.  After the pandemic hit in 2020, year-over-year inflation decreased almost to $\answer{0}$ percent.  But in early 2021, inflation began increasing dramatically, reaching a maximum of about $\answer{9}$ percent by mid-2022, before receding to about $\answer{3}$ percent in mid 2023.  
+
+\textbf{Disinflation} is when high inflation slows to lower (but still positive) rates, the phenomenon is called \textbf{disinflation}.  In the above graph, we see disinflation from mid-$\answer{2022}$ to mid-$\answer{2023}$.  
+
+\end{question}
+\end{question}
+\end{question}
+\end{question}
+
+\begin{question}
+Consider the following chart, which shows both CPI (over a broader time span) along with another measure, 
+\begin{center}
+\includegraphics[scale=0.35]{CPICore1970-present.png}
+\end{center}
+
+What do you notice about the relationships between the two measures of CPI?
+\begin{selectAll}
+\choice{They both show the CPI index value over time.}
+\choice[correct]{They both show percent change from a year ago.}
+\choice[correct]{The red graph excludes the prices of food and energy.}
+\choice[correct]{They show the same general trends.}
+\choice{They show very different trends.}
+\choice{The blue graph is smoother.}
+\choice[correct]{The red graph is smoother.}
+\end{selectAll} 
+
+\begin{question}
+
+\begin{enumerate}
+\item Prices of some goods and services (such as gasoline and some foods) are ``volatile,'' meaning they fluctuate dramatically within a month or even within a day.  Thus, the BLS also reports another measure, called \textbf{Core CPI}, which removes food and energy prices from the calculation, thereby helping economists and policy makers see a more stable estimate of ``underlying'' inflation.
+\item The Federal Reserve System (the Fed) uses $2\%$ (annual) \textbf{core} inflation as a ``target'' to guide its policy decisions.    
+\item Prices of other goods and services (such as wages and rent) are described as ``sticky,'' meaning they respond slowly to changing economic conditions.  
+\end{enumerate}
+
+When inflation is changing fast, these year-over-year measures can be misleading because the comparison data is more than 12 months old.  On the other hand, as we have already seen, month-over-month measures can be ``noisy'' and thus also misleading.  As a compromise between these approaches, economists sometimes attend to inflation over 3 or 6 months, and then annualize those measures.  
+
+With a modest interest rate, debt can be manageable.  With slight inflation, debt becomes more manageable over time.  For example, when inflation is $2\%$, the ``real'' cost of a $5\%$ mortgage is only $\answer{3}$ percent.  Many homeowners stretch to afford their first mortgage.  But with a little inflation, alongside raises and promotions at work, homeowners often find their mortgages become more affordable after $5$ or $10$ years.  
+
+%As we have seen above, slight month-over-month deflation is not uncommon due to many factors, including the following: 
+%
+%(1) Prices of most goods and services change only slightly, if at all. 
+%(2) Prices of other goods (e.g., food and energy) are quite volatile.  
+%(3) The process involves inherent measurement error.  
+
+Month-over-month deflation is not uncommon, but year-over-year deflation is rare. Significant or prolonged deflation is undesirable, as falling prices are a sign of a weak economy.  Consumers delay purchases in hopes of getting a lower price in the future.  Companies slow production in response to lower demand, and eventually resort to layoffs or wage reductions, aiming to maintain profitability.  The real value of consumer and corporate debt increases, making it harder to pay off.  Unemployment rises, which reduces demand, which further reduces prices.  
+\end{question}
+\end{question}
+
+
+
+%Original Questions 
+%\begin{enumerate}
+%\item What is the rate of inflation from September 2024 to October 2024?  What is that rate annualized?  
+%\item What are the maximum and minimum monthly inflation rates between January 2020 (just before the pandemic) and October 2024?  When do they occur and what are those rates annualized?  
+%\item Use year-over-year inflation rates to describe the ``inflation trajectory'' from just before the pandemic to the present.  (A graph may help.) Be sure to mention the maximum and minimum rates and when they occur.  Why are these year-over-year rates cited in the press more often than the annualized monthly rates?  
+%\item How does inflation now compare to inflation at its peak since 2020.  How close are we to reaching the Fed's target rate? Explain.  
+%\item What is the total inflation from January 2020 to October 2024?  What is that rate annualized?   Explain. 
+%\item Use your data and calculations to explain and illustrate the difference between ``deflation'' and ``disinflation.''
+%\end{enumerate}
+
+%
+% The data graphed below is from the Consumer Price Index for All Urban Consumers: All Items in U.S. City Average (CPIAUCSL). 
+% Source:  https://fred.stlouisfed.org/series/CPIAUCSL
+
+%\begin{center}
+%\begin{tabular}{cc}
+%\begin{tabular}{|llc|}
+%%2019 & Nov & 257.879 \\
+%%      & Dec & 258.630 \\
+% \hline
+%Year & Mo. & CPI \\
+%\hline
+%2020 & Jan & 259.127 \\
+%       & Feb & 259.250 \\
+%       & Mar & 258.076 \\
+%       & Apr & 256.032 \\
+%       & May & 255.802 \\
+%       & Jun & 257.042 \\
+%       & Jul & 258.352 \\
+%       & Aug & 259.316 \\
+%       & Sep & 259.997 \\
+%       & Oct & 260.319 \\
+%       & Nov & 260.911 \\
+%       & Dec & 262.045 \\
+%2021 & Jan & 262.687 \\
+%       & Feb & 263.579 \\
+%       & Mar & 264.961 \\
+%       & Apr & 266.614 \\
+%       & May & 268.383 \\
+%       & Jun & 270.654 \\
+%       & Jul & 271.903 \\
+%       & Aug & 272.676 \\
+%       & Sep & 273.910 \\
+%       & Oct & 276.550 \\
+%       & Nov & 278.919 \\
+%       & Dec & 280.845 \\
+%2022 & Jan & 282.543 \\
+%       & Feb & 284.500 \\
+%       & Mar & 287.674 \\
+%       & Apr & 288.561 \\
+%       & May & 291.298 \\
+%       & Jun & 294.957 \\
+%       & Jul & 294.913 \\
+%       & Aug & 295.097 \\
+%       & Sep & 296.349 \\
+%       & Oct & 298.007 \\
+%       & Nov & 298.786 \\
+%       & Dec & 298.832 \\
+%       \hline
+% \end{tabular}
+% & \qquad
+% \begin{tabular}{|llc|}
+% \hline
+%Year & Mo. & CPI \\
+%\hline
+%2023 & Jan & 300.420 \\
+%       & Feb & 301.450 \\
+%       & Mar & 301.821 \\
+%       & Apr & 302.845 \\
+%       & May & 303.334 \\
+%       & Jun & 304.014 \\
+%       & Jul & 304.609 \\
+%       & Aug & 306.082 \\
+%       & Sep & 307.276 \\
+%       & Oct & 307.696 \\
+%       & Nov & 308.148 \\
+%       & Dec & 308.741 \\
+%2024 & Jan & 309.698 \\
+%       & Feb & 310.967 \\
+%       & Mar & 312.345 \\
+%       & Apr & 313.023 \\
+%       & May & 313.175 \\
+%       & Jun & 313.044 \\
+%       & Jul & 313.569 \\
+%       & Aug & 314.062 \\
+%       & Sep & 314.732 \\
+%       & Oct & 315.631 \\
+%       & Nov & 316.528 \\
+%       & Dec & 317.604 \\
+%2025 & Jan & 318.961 \\
+%       & Feb & 319.679 \\
+%       & Mar & 319.785 \\
+%       & Apr & 320.302 \\
+%       & May & 320.620 \\
+%       & Jun & 321.435 \\
+%       & Jul & 322.169 \\
+%       & Aug & 323.291 \\
+%       & Sep & 324.245 \\
+%       & Oct &  \\
+%       & Nov & 325.063 \\
+%       & Dec & 326.031 \\
+%       \hline
+%%2026 & Jan & 326.588 \\
+%%       & Feb & 327.460 \\
+%%       & Mar & 330.293 \\
+%%       & Apr & 332.407 \\
+%%       & May & 333.979 \\
+%%       & Jun & 332.568 \\
+%%       & Jul & 332.813 \\
+%%       & Aug & 334.131 \\
+%\end{tabular}
+%\end{tabular}
+%\end{center}
+
+
+
+\end{document}

@@ -20,6 +20,19 @@ accumulated interest and then is applied to principal, in order to
 calculate the \textbf{remaining principal balance}.  The loan is paid
 back in full when the remaining principal balance is reduced to zero.
 
+
+Growth rate
+Growth factor
+Geometric sequence
+Same growth each year
+Common to ask
+Doubling time? 
+Compounding semi-annually, monthly, daily, continuously.  
+
+Monthly rate.  Annualize it
+Annual rate, what would be the equivalent monthly rate? 
+Rate over k months. 
+
  
 Although loans are typically paid monthly, we first explore annual payments to simplify and shorten the calculations.  
 
