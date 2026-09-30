@@ -74,7 +74,7 @@ We explored a disc model of spherical geometry and a Poincare disc model of hype
 %
 %Note: Informally, some say that a tangent to a curve touches the curve only once, but this description is misleading.  For example line $k$ is a tangent to a curve $f$ at point $A$, but it intersects the curve again at point $D$.  And what about a tangent to a line?  
 %
-%\begin{center}
+%\begin{image}
 %\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
 %\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
 %\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
@@ -100,7 +100,7 @@ We explored a disc model of spherical geometry and a Poincare disc model of hype
 %\end{scriptsize}
 %\end{axis}
 %\end{tikzpicture}
-%\end{center}
+%\end{image}
 %
 %In calculus, a tangent is defined as a line through two points ``infinitely close’’ to each other on the curve.  Intuitively, we can imagine zooming in close enough so that the curve appears straight.  Then we see that points far away are not relevant.  And it becomes clear that a tangent to a line is the line itself.  
 %
@@ -134,9 +134,9 @@ $\answer[format=string]{no}$
 In hyperbolic geometry, there is \wordChoice{\choice{one}\choice{zero}\choice[correct]{more than one}} parallel through a point not on a line. 
 \begin{feedback}[correct]
 In fact, this is the defining distinction between hyperbolic and Euclidean geometry.  The figure below shows, in a disc model, three different lines through $C$, all parallel to line $\overleftrightarrow{AB}$.  
-\begin{center}
+\begin{image}
 \includegraphics{hyperbolicParallels.png}
-\end{center}
+\end{image}
 Note: In a hyperbolic or Euclidean plane, distinct lines are said to be \emph{parallel} if they do not intersect.  
 
 {\color{red} \emph{Warning:} Some sources define lines as \emph{parallel} when they are the same distance apart, but this is not a useful definition for hyperbolic geometry.}  
@@ -263,7 +263,7 @@ First, two distinct perpendiculars from a given point to a given line would crea
 \item In spherical geometry, such a triangle \wordChoice{\choice[correct]{can}\choice{cannot}} exist because \emph{every} triangle has an angle sum greater than $180^\circ$.  
 \end{itemize}
 
-\begin{center}
+\begin{image}
 \definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.7]
 \clip(-3.,-0.1) rectangle (12.,2.1);
@@ -273,7 +273,7 @@ First, two distinct perpendiculars from a given point to a given line would crea
 \draw [line width=1.pt] (10.506146939582424,-161.7727998905248) circle (163.34443297510484cm);
 \draw [line width=1.pt] (10.290942751443046,106.83278616774713) circle (106.37042822301825cm);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 \begin{problem}
 Second, consider any two distinct perpendiculars to a given line.  
@@ -288,17 +288,17 @@ Correct!  In $\answer[format=string]{spherical}$ geometry, parallel lines don't 
 Furthermore:  
 \begin{itemize}
 \item In $\answer[format=string]{hyperbolic}$ geometry, the two perpendiculars grow further apart away from the intersections with the given line.  
-\begin{center}
+\begin{image}
 \includegraphics{hyperbolicPerpendiculars.png}
-\end{center}
+\end{image}
 \item In $\answer[format=string]{Euclidean}$ geometry, the two perpendiculars are always the same distance apart away from the intersections with the given line.  
-\begin{center}
+\begin{image}
 \includegraphics{euclideanPerpendiculars.png}
-\end{center}
+\end{image}
 \item In $\answer[format=string]{spherical}$ geometry, the two perpendiculars become closer together away from the intersections with the given line. In fact, the two perpendiculars intersect at two points on opposite ends of a diameter of the sphere. 
-\begin{center}
+\begin{image}
 \includegraphics{sphericalPerpendiculars.png}
-\end{center}
+\end{image}
 \end{itemize}
 \end{problem}
 \end{problem}

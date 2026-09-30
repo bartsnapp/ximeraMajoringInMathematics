@@ -305,7 +305,7 @@ Latitudes run (exactly) east-west and longitudes run (exactly) north-south, so t
 
 The picture below is exaggerated to give a clearer sense of the actual shape of Colorado.  And this version is flattened rather than existing on a curved surface. 
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \clip(-2.2,-11.2) rectangle (1.3,-8.9);
 \draw [shift={(-0.6031,5.95893)},line width=1.pt]  plot[domain=4.630204927871329:4.819148280507725,variable=\t]({1.*15.044584286543115*cos(\t r)+0.*15.044584286543115*sin(\t r)},{0.*15.044584286543115*cos(\t r)+1.*15.044584286543115*sin(\t r)});
@@ -314,13 +314,13 @@ The picture below is exaggerated to give a clearer sense of the actual shape of 
 \draw [line width=1.pt] (1.,-9.)-- (1.210106151732617,-10.960553437925018);
 \draw (-0.4,-10.1) node[anchor=center] {Colorado};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 And below is a picture from Google Earth showing the boundary of Colorado (in yellow) along with straight lines (in purple) showing the extent to which the northern and southern borders are not straight. 
 
-\begin{center}
+\begin{image}
 \includegraphics[scale=0.5]{colorado.png}
-\end{center}
+\end{image}
 
 When ideal mathematics meets the real world, however, things can get messy.  When surveyors tried to carry out the congressional definition, they made mistakes.  For details, read an article \href{https://www.atlasobscura.com/articles/is-colorado-a-rectangle}{here} or \href{https://bigthink.com/strange-maps/colorado-is-not-a-rectangle/}{here}, which explains that the state is actually a polygon with $\answer{697}$ sides.  (The text of the article is the same at both links, but the graphics are different, so it is worth looking at both versions.) 
 
@@ -329,7 +329,7 @@ When ideal mathematics meets the real world, however, things can get messy.  Whe
 %
 %Note: Informally, some say that a tangent touches the curve only once, but this is descriptions misleading.  For example line $k$ is a tangent to a curve $f$ at point $A$, but it intersects the curve again at point $D$.  And what about a tangent to a line?  
 %
-%\begin{center}
+%\begin{image}
 %\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
 %\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
 %\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
@@ -355,7 +355,7 @@ When ideal mathematics meets the real world, however, things can get messy.  Whe
 %\end{scriptsize}
 %\end{axis}
 %\end{tikzpicture}
-%\end{center}
+%\end{image}
 %
 %In calculus, a tangent is defined as a line through two points ``infinitely close’’ to each other on the curve.  Intuitively, we can imagine zooming in close enough so that the curve appears straight.  Then we see that points far away are not relevant.  And it becomes clear that a tangent to a line is the line itself.  
 %
@@ -380,7 +380,7 @@ Where on earth could the bear be?
 \begin{problem}
 Correct!  The bear is white because she starts at the $\answer[format=string]{North Pole}$ (two words).  Traveling due south and due north, must be along 
 $\answer[format=string]{longitude}$ lines are straight paths.  Traveling due east must be at constant $\answer[format=string]{latitude}$, which requires a circular path.  
-\begin{center}
+\begin{image}
 \definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \clip(-1.7,-3.4) rectangle (1.77,0.5);
@@ -393,7 +393,7 @@ $\answer[format=string]{longitude}$ lines are straight paths.  Traveling due eas
 \draw [fill=xdxdff] (0.,0.) circle (1.5pt);
 \draw[color=xdxdff] (0.1,0.3) node {$N$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 \end{problem}
 \end{problem}
 
